@@ -39,3 +39,5 @@ for key in vCopy.keys():
         del v[key]
 t2 = time.time()
 print (t2 - t1)
+
+https://github.com/janusnic/21v-python/

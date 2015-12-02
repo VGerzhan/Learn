@@ -86,11 +86,11 @@ class Calculator(QtGui.QDialog):
                 self.unaryOperatorClicked)
         self.equalButton = self.createButton("=", self.equalClicked)
 
-        self.squareRootButton = self.createButton("Sin",
+        self.sinButton = self.createButton("Sin",
                 self.sclOperatorClicked)
-        self.squareRootButton = self.createButton("Cos",
+        self.cosButton = self.createButton("Cos",
                 self.sclOperatorClicked)
-        self.squareRootButton = self.createButton("Log",
+        self.logButton = self.createButton("Log",
                 self.sclOperatorClicked)
 
         mainLayout = QtGui.QGridLayout()
@@ -184,7 +184,7 @@ class Calculator(QtGui.QDialog):
                 self.abortOperation()
                 return
             result = math.sin(operand)
-       elif clickedOperator == "Cos":
+        elif clickedOperator == "Cos":
             if operand == 0.0:
                 self.abortOperation()
                 return
